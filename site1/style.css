@@ -7,7 +7,7 @@ body{
 	font-family: sans-serif;
 }
 #nav-bar{
-	position: sticky;; 
+	position: sticky;
 	top:0; 
 	z-index: 10; 
 }
@@ -20,7 +20,7 @@ body{
 	height: 65px;
 	width: 70px;
 	padding-left: 20px; 
-	padding-top: 5px; 
+	padding-top: 10px; 
 	padding-bottom: 5px; 
 }
 
@@ -75,12 +75,16 @@ body{
 .bottom-img{
 	width: 100%; 
 }
+.img-fluid{
+	width: 350px;
+}
 /* services */
 #services{
-	padding: 80px 80px;
+	padding: 40px 80px;
 }
 .service-img{
-	width: 100px; 
+	width: 170px;
+	height: 170px; 
 	margin-top: 20px;
 }
 .services{
@@ -101,18 +105,6 @@ body{
 	margin-right: auto; 
 	display: block; 
 	transform: translateY(63px);
-}
-
-.title::after{
-	content: ' '; 
-	background: #000;
-	height: 10px; 
-	width: 50px; 
-	margin-left: auto; 
-	margin-right: auto; 
-	margin-bottom: 40px; 
-	display: block; 
-	transform: translateY(8px);
 }
 #services .btn-primary{
 	box-shadow: none; 
