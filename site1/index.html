@@ -195,6 +195,7 @@
 				<span> Position </span>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. </p>
 			</div>
+<!--comment out-->
 			<div class="team_member">
 			<div class="member_img">
 				<img src="temp_member1.png" width="150px" height="150px" alt="team member: Obama">
@@ -209,6 +210,7 @@
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. </p>
 			</div>
 		</div>
+<!--till here-->
 	</div>
 </div>
 </section>
@@ -251,7 +253,12 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-4 footer-box">
-				<p><b>ANOTHER COLUMN </b></p>
+				<p><b> ANOTHER COLUMN </b></p>
+				<!-- uncomment
+				<p><b> WEBSITE & LOGO DESIGN </b></p>
+				<p style="letter-spacing: 2px;"> SHREYA KUNTUMALLA</p>
+				<p><i class="fa fa-envelope-o"></i><a href="mailto:shreyakuntumalla@gmail.com"> shreyakuntumalla@gmail.com</a></p>
+			-->
 				<!--<img src="f_favicon_transparent.png"> <p style="display:inline-block; font-size: 19px; font-weight: 600;"></p>-->
 			</div>
 			<div class="col-md-4 footer-box">
@@ -269,5 +276,10 @@
 </section>
 
 </body>
-
+<!-- js  to close the navbar after clicking-->
+<script>
+        $('.navbar-collapse a').click(function(){
+            $(".navbar-collapse").collapse('hide');
+        });
+    </script>
 </html>
