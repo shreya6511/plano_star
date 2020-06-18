@@ -54,11 +54,12 @@ body{
 #banner{
 	background-image: linear-gradient(to right, #7fc8f8, #0a78c2);
 	color: #fff; 
-	padding-top: 5%;
+	padding-top: 1%;
 }
 .promo-title{
 	font-size: 40px;
 	font-weight: 600; 
+	letter-spacing: 3px;
 	margin-top: 100px; 
 }
 .play-btn{
@@ -78,9 +79,7 @@ body{
 .bottom-img{
 	width: 100%; 
 }
-.img-fluid{
-	width: 350px;
-}
+
 /* services */
 #services{
 	padding: 40px 80px;
@@ -154,6 +153,7 @@ body{
 .wrapper{
 	margin-top: 20px; 
 	text-align: center;
+	margin-bottom: 20px;
 }
 .wrapper .our_team {
 	display: flex;
@@ -284,38 +284,57 @@ body{
 .footer-box a:hover{
 	font-weight: bold;
 }
-/*
-.forms{
-	margin-top: 20px;
-	margin-bottom: 30px;
+
+/** sliding in text on meet the team**/
+#slider {
+    position: absolute;
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
 }
-.forms a{
-	text-decoration: none; 
-	color:#fff;
-	padding: 20px 25px; 
-	margin-left: 25px;
-	margin-right: 25px; 
-	margin-top: 25px;
-	border: none;
-	border-radius: 28px; 
-	font-weight: 600;
-	font-size: 19px;
-	background-image: linear-gradient(to right, #7fc8f8, #0a78c2);
 
+.slide-in {
+    animation: slide-in 0.5s forwards;
+    -webkit-animation: slide-in 0.5s forwards;
 }
-.forms a:hover{
-	text-decoration: none; 
-	color: #ffe45e; 
 
+.slide-out {
+    animation: slide-out 0.5s forwards;
+    -webkit-animation: slide-out 0.5s forwards;
 }
-*/
+    
+@keyframes slide-in {
+    100% { transform: translateX(0%); }
+}
 
+@-webkit-keyframes slide-in {
+    100% { -webkit-transform: translateX(0%); }
+}
+    
+@keyframes slide-out {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-100%); }
+}
 
+@-webkit-keyframes slide-out {
+    0% { -webkit-transform: translateX(0%); }
+    100% { -webkit-transform: translateX(-100%); }
+}
 
-
-
-
-
-
-
-
+/** meet the team 2.0**/
+.mem_name{
+	text-transform: uppercase;
+	font-size: 20px; 
+	line-height: 18px; 
+	letter-spacing: 2px; 
+	margin: 15px 0 10px;
+	color: #333745;
+}
+.mem_position {
+	font-weight: 10;
+	color: #333745;
+	letter-spacing: 8px; 
+}
+#meet_team 
+{
+	padding-bottom: 300px; 
+}

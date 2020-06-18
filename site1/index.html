@@ -33,7 +33,7 @@
         	<a class="nav-link" href="#mission">OUR MISSION</a>
       		</li>
       		<li class="nav-item">
-        	<a class="nav-link" href="#team">MEET THE TEAM</a>
+        	<a class="nav-link" href="meet_the_team.html">MEET THE TEAM</a>
       		</li>
       		<li class="nav-item">
         	<a class="nav-link" href="#testimonials">TESTIMONIALS</a>
@@ -53,11 +53,11 @@
 			<p class="promo-title">PLANO STAR TUTORING</p>
 			<p> Here is the text that is supposed to be under the title, descriptions. More text just to see what's up.</p>
 			<div id="signup">
-			<a href="https://forms.gle/LzxrDSzpemSyEeQ37" target="_blank"><img src="f_favicon_transparent.png" class="play-btn">SIGN UP FOR FREE CLASSES</a>
+			<a href="https://forms.gle/AvK1aUkBKzToAaWbA" target="_blank"><img src="f_favicon_transparent.png" class="play-btn">SIGN UP FOR FREE CLASSES</a>
 		</div>
 		</div>
 		<div class="col-md text-center">
-		<img src="banner_pic.png" class="img-fluid"> 
+		<img src="banner_pic.png" width="350px"> 
 		</div>
 		</div>
 		</div>
@@ -96,7 +96,7 @@
 			<a href="https://forms.gle/LzxrDSzpemSyEeQ37">SIGN UP NOW TUTORS</a>
 		</div>
 	-->
-			<button type="button" class="btn btn-primary" onclick="window.open('https://forms.gle/LzxrDSzpemSyEeQ37','_blank')">SIGN UP NOW STUDENTS</button>
+			<button type="button" class="btn btn-primary" onclick="window.open('https://forms.gle/AvK1aUkBKzToAaWbA','_blank')">SIGN UP NOW STUDENTS</button>
 			<button type="button" class="btn btn-primary" onclick="window.open('https://forms.gle/LzxrDSzpemSyEeQ37','_blank')">SIGN UP NOW TUTORS</button>
 		</div>
 	</section>
@@ -111,6 +111,7 @@
 		</div>
 	</section>
 <!-- meet the team-->
+<!--
 <section id="team">
 	<div class="container">
 		<div class="wrapper">
@@ -214,6 +215,7 @@
 	</div>
 </div>
 </section>
+-->
 
 <!--TESTIMONIALS-->
 	<section id="testimonials">
@@ -269,12 +271,18 @@
 	</div>
 	
 </section>
-
 </body>
 <!-- js  to close the navbar after clicking-->
 <script>
         $('.navbar-collapse a').click(function(){
             $(".navbar-collapse").collapse('hide');
         });
-    </script>
+        var $slider = document.getElementById('slider');
+
+		$toggle.addEventListener('click', function() {
+    	var isOpen = $slider.classList.contains('slide-in');
+
+    	$slider.setAttribute('class', isOpen ? 'slide-out' : 'slide-in');
+		});
+</script>
 </html>
