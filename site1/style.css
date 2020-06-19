@@ -338,3 +338,35 @@ body{
 {
 	padding-bottom: 300px; 
 }
+.row .col-md-4{
+	margin-bottom: 10px; 
+}
+.row .col-md-4 img{
+	display: block; 
+	margin: auto; 
+}
+.row .col-md-6 p{
+}
+/**
+.row .col-md-6 p{
+	width: 350px; 
+	text-align: center; 
+}
+*/
+@media only screen and (max-width: 900px) {
+  .row .col-md-4 img{
+    float: left; 
+  }
+  .row .col-md-6 p{
+  	max-width: 350px; 
+  }
+  .row .col-md-6{
+  	padding-bottom:250px; 
+  }
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+	.row .col-md-6{
+  	padding-bottom: 300px; 
+  }
+}
+
